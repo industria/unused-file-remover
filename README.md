@@ -16,3 +16,11 @@ Usage: unused-file-remover arguments
   -verbose
         Verbose output
 ```
+
+## using the docker image
+
+There is a docker image containing the unused-file-remover program which can be used as follows:
+
+```sh
+docker run jlindstorff/unused-file-remover:latest -cachePath=/tmp/ -maxage=168h -verbose
+```
